@@ -98,3 +98,29 @@ const workSecObserver = new IntersectionObserver(workSectionObserve, {
 workSecObserver.observe(workSection);
 
 
+// Slider Section
+
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    autoplay:{
+        delay: 2000
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+        1200: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+        600: {
+          slidesPerView: 2,
+          spaceBetween: 40,
+        },
+        1900: {
+          slidesPerView: 4,
+          spaceBetween: 50,}
+        }
+  });
